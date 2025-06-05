@@ -21,17 +21,12 @@ import java.io.File;
  *  7) Dynamic background image indicating sunrise/day/sunset/night for the city’s local time.
  *  8) “Reset” button clears fields and restores default background.
  *
- *  ★ Note: Place your 4 background images in WeatherApp/images/:
+ *  ★ Note: 4 background images in WeatherApp/images/:
  *      • sunrise.jpg
  *      • day.jpg
  *      • sunset.jpg
  *      • night.jpg
- *
- *  To compile:
- *    javac -cp ".;../lib/json-20230227.jar" WeatherData.java WeatherAPIClient.java WeatherApp.java
- *
- *  To run:
- *    java  -cp ".;../lib/json-20230227.jar" WeatherApp
+
  */
 public class WeatherApp extends JFrame {
     private final WeatherAPIClient apiClient = new WeatherAPIClient();
