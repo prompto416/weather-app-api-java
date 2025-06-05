@@ -248,13 +248,6 @@ public class WeatherApp extends JFrame {
     /**
      * Based on the city's local time string (ISO "yyyy‑MM‑dd'T'HH:mm"),
      * chooses one of four backgrounds: sunrise, day, sunset, night.
-     *
-     * You must have placed your images in WeatherApp/images/ with exactly these names:
-     *   • sunrise.jpg   (sunrise scene)
-     *   • day.jpg       (daytime scene)
-     *   • sunset.jpg    (sunset scene)
-     *   • night.jpg     (nighttime scene)
-     *
      * We parse the hour from the time string and pick:
      *   05–07 → sunrise
      *   08–17 → day
@@ -321,10 +314,9 @@ public class WeatherApp extends JFrame {
         SwingUtilities.invokeLater(WeatherApp::new);
     }
 
-    // ───────────────────────────────────────────────────────────────────────────
+   
     // BackgroundPanel: a JPanel that, if given a BufferedImage, draws it stretched
     // to fill the panel. Otherwise, it uses the default background.
-    // ───────────────────────────────────────────────────────────────────────────
     private static class BackgroundPanel extends JPanel {
         private BufferedImage backgroundImage = null;
 
